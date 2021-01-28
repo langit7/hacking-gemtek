@@ -112,7 +112,10 @@ echo "         SCRIPT        $SCRIPT"
 echo "         SCRIPTPATH    $SCRIPTPATH"
 echo "MK_BASEDIR=\"$MK_BASEDIR\""           > $SCRIPTPATH/conf.sh
 echo "FW_FILE=\"$FW_FILE\""                >> $SCRIPTPATH/conf.sh 
+echo "ROOTPASS=\"root\""                >> $SCRIPTPATH/conf.sh
 echo
+
+
 
 # ------ prepare folder layouts
 echo "# ------ preparing folder layout at $MK_BASEDIR"

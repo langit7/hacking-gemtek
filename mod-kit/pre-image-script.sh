@@ -30,8 +30,10 @@
 #
 
 cd $MK_BASEDIR/output/root/bin
-rm -f login
-ln -s /bin/busybox login
+#rm -f login
+mv shell_auth shell_auth.bak #disable Challange code for telnet
+#ln -s /bin/busybox login
+ln -s /bin/busybox shell_auth
 
 echo -n "hacking-gemtek modified boot image " > $MK_BASEDIR/output/root/etc/motd
 date >> $MK_BASEDIR/output/root/etc/motd
